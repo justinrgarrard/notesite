@@ -22,8 +22,8 @@ title: Notesite
 email: justinrgarrard@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A Jekyll website that displays Markdown notes in an easy to use fashion.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/notesite" # the subpath of your site, e.g. /blog
+url: "https://justinrgarrard.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  justinrgarrard
 
