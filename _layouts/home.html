@@ -8,29 +8,19 @@ layout: default
   {%- endif -%}
 
   <h2>Description</h2>
-  <p>Notesite is a simple app for displaying Markdown notes stored in their own Git repository.</p>
+  <p>Notesite is a simple tool for displaying Markdown notes stored in their own Git repository.</p>
 
   <h2>Reading Notes</h2>
   <p>Go to the <a href=notes/>notes page</a> to navigate between topics and entries.</p>
 
   <h2>Writing Notes</h2>
-  <p>Notes are stored in their own Git repository and brought in via a Git Submodule. Simply push your changes on the notes repository, pulling to this repository when you're ready to update the website.</p>
+  <p>Notes are stored in their own Git repository and brought in via a Git Submodule. Whenever you update your notes repo, run the below commands to update this site.</p>
 
-  <h2>Why?</h2>
-  <p>I've tried a few other approaches to note-taking, but haven't been entirely satisfied with any of them.</p>
-
-    <ul>
-      <li>Paper smudges and can't be edited easily.</li>
-      <li>Plain text files don't have markup tools.</li>
-      <li>Word documents aren't easy to organize across multiple topics.</li>
-      <li>LaTex and HTML files aren't very readable.</li>
-      <li>Wikis need their own infrastructure, like databases or hosting services.</li>
-      <li>Note-taking apps (like OneNote and Cherrytree) are difficult to share.</li>
-    </ul>
-
-    <p>Using directories and Markdown seemed like a good barebones strategy. Authors get full control over how they structure their notebook. They also get markup tools (bold, italics, etc.) without affecting legibility of the raw file.</p>
-
-    <p>Jekyll adds readability, searchability, and ease of publication. Authors can choose to theme their notes if they want something a little fancier than raw text files.</p>
+<pre><code>$ git submodule update --remote
+$ git add --all
+$ git commit -m "Imported latest version of notes"
+$ git push
+</code></pre>
 
   {{ content }}
 
